@@ -17,5 +17,6 @@ nodejs grunt yeoman bower
 
 >grunt有两个很好用的插件  
 （load-grunt-task， load-grunt-config, 其中load-grunt-config内部默认集成了load-grunt-task插件）
-
+  
+###tip
 * 具体笔记已经注释在Gruntfile.js中了，以后忘了可以看看。
