@@ -58,14 +58,14 @@ fBound.prototype = new fNOP();
 
 
 ###答案
->debug之后 发现这两句话会影响 line:20 "this instanceof fNOP" 的结果
-没有这两句话的话this instanceof fNOP结果一直为false
-PS: (第一次调用的时候this==window，第二次操作的时候this是afterBind创建的临时变量，他们的原型链中都不存在fNOP的prototype属性)
-也就是说我们操纵的一直都是oThis，也就是说我们一直在给obj对象中的变量赋值
-这也就理解了bind的仿照实现为什么有这两行代码.
-我们要区分对bind返回的对象（方法，类）进行了什么操作
-是默认全局调用还是new了一个新的对象，这两者在执行过程中的this值是不同的
-这是关注点，对于理解javascript对象和this是有一些帮助的，很好！！！
+>debug之后 发现这两句话会影响 line:20 "this instanceof fNOP" 的结果  
+没有这两句话的话this instanceof fNOP结果一直为false  
+PS: (第一次调用的时候this==window，第二次操作的时候this是afterBind创建的临时变量，他们的原型链中都不存在fNOP的prototype属性)  
+也就是说我们操纵的一直都是oThis，也就是说我们一直在给obj对象中的变量赋值  
+这也就理解了bind的仿照实现为什么有这两行代码.  
+我们要区分对bind返回的对象（方法，类）进行了什么操作  
+是默认全局调用还是new了一个新的对象，这两者在执行过程中的this值是不同的  
+这是关注点，对于理解javascript对象和this是有一些帮助的，很好！！！  
 
 ###另外
 >new操作都做了什么，举个栗子：
