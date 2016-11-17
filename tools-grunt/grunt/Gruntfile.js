@@ -98,7 +98,7 @@ exports = module.exports = function(grunt) {
 	require("load-grunt-tasks")(grunt, {
 		pattern: ['grunt-*', '@*/grunt-*', '../grunt-config/*'],
 		config: './package.json',
-		scope: ['devDependencies', 'dependiencies']
+		scope: ['devDependencies', 'dependiencies', 'myCustomModule']
 	});
 
 	// 任务定义 defaullt
