@@ -1,4 +1,4 @@
-###关于javascript中的prototype __proto__ this new等操作的一些思考
+###关于javascript中的prototype \_\_proto\_\_ this new等操作的一些思考
 >今天在看前端早读课的文章，发现了下面这个方法，很疑惑，也很不理解。回来自己稍稍折腾了一发，直接看例子！
   
 
@@ -71,7 +71,7 @@ PS: (第一次调用的时候this==window，第二次操作的时候this是after
 >new操作都做了什么，举个栗子：
 var a = new A();  
 1. var a = {};  
-2. a.__proto__ = A.prototype (a instanceof A is true)  
+2. a.\_\_proto\_\_ = A.prototype (a instanceof A is true)  
 3. A.call(a)  
 
 >CSDN上看到的解释，感觉应该没有问题，按这样理解也是说的通的，改天看看高程怎么说的
