@@ -69,10 +69,10 @@ PS: (第一次调用的时候this==window，第二次操作的时候this是after
 
 ###另外
 >new操作都做了什么，举个栗子：
-var a = new A();
-1. var a = {};
-2. a.__proto__ = A.prototype (a instanceof A is true)
-3. A.call(a)
+var a = new A();  
+1. var a = {};  
+2. a.__proto__ = A.prototype (a instanceof A is true)  
+3. A.call(a)  
 
 >CSDN上看到的解释，感觉应该没有问题，按这样理解也是说的通的，改天看看高程怎么说的
 
