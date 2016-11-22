@@ -1,7 +1,7 @@
 ###路由
    
 >SPA跟路由其实没什么必然联系，路由的目的是把不同的页面交给不同的逻辑处理  
-比如 ```txt www.demo.com/index```, 如果我们采取了路由的方案，会根据URL的变化展现不同的页面，同时会处理不同的逻辑（www.demo.com/index/a, www.demo.com/index/b），而没有采取路由方案的SPA我们在新的窗口打开我们的地址时只能看到同一个页面(www.demo.com/index)。
+比如 ```www.demo.com/index```, 如果我们采取了路由的方案，会根据URL的变化展现不同的页面，同时会处理不同的逻辑（```www.demo.com/index/a```, ```www.demo.com/index/b```），而没有采取路由方案的SPA我们在新的窗口打开我们的地址时只能看到同一个页面(```www.demo.com/index```)。
 
 ###为什么做SPA，为什么使用路由方案
    
